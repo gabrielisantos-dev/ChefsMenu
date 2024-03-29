@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Epilogue', sans-serif;
+}
+
+@layer components {
+  /* Login */
+  .bg-img {
+    @apply bg-cover min-h-screen bg-red;
+  }
+
+  .title-login {
+    @apply text-red text-center font-medium tracking-[3.3px] text-xl md:text-3xl uppercase mb-5;
+  }
+
+  .input-login {
+    @apply border-gray border-[1px] rounded-md h-10 w-[276px] md:w-[350px] pl-4 focus:outline-none text-gray placeholder:text-gray;
+  }
+
+  .button-login {
+    @apply  text-gray rounded-md h-10 w-[276px] md:w-[350px] text-center font-bold tracking-[0.42px] text-sm uppercase disabled:bg-gray disabled:text-white;
+  }
+
+  .login-container {
+    @apply flex flex-col items-center bg-white pt-24 sm:pt-28 md:pt-44 w-screen h-screen mt-[-100px] md:mt-[-175px]
+  }
+
+  .button-register {
+    @apply flex justify-center items-center text-gray bg-yellow rounded-md h-10 w-[276px] md:w-[350px] font-bold tracking-[0.42px] text-sm uppercase my-2;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* Meals */
+  .flex-col-center {
+    @apply flex flex-col items-center;
+  }
+
+  .title-meals {
+    @apply text-red text-xl md:text-3xl font-bold tracking-widest uppercase ;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* filterButton */
+  .btn-filter {
+    @apply mx-1 bg-red text-[9px] sm:text-xs md:text-lg text-yellow font-bold px-2 py-1 rounded;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* Footer */
+  .footer {
+    @apply flex justify-between items-center bg-red h-[52px] px-9 md:px-16 fixed bottom-0 w-full;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* header */
+  .container-header {
+    @apply flex justify-between items-center w-screen h-[52px] px-9 md:px-16 bg-yellow;
+  }
+
+  .chef-logo{
+    @apply w-12 mr-2;
+  }
+
+  .menu-logo {
+    @apply w-28 sm:w-36;
+  }
+
+  .title-meals {
+    @apply text-red text-xl md:text-3xl font-bold tracking-widest mt-4 md:mt-6;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* RecipeCard */
+  .img-recipe-card {
+    @apply w-[134.85px] md:w-[160px];
+  }
+
+  .container-recipe-card {
+    @apply flex justify-center m-2 sm:m-4 rounded-[5px] border border-gray  w-[134.85px] md:w-[160px];
+  }
+
+  /* ------------------------------------------------------------------------------- */
+  
+  /* SearchBar */
+  .label {
+    @apply text-white mr-5;
+  }
+
+  .btn-search {
+    @apply w-[275px] rounded-[5px] mb-2 text-gray text-sm py-2 font-bold uppercase tracking-tight;
+  }
+
+  .search-input {
+    @apply w-[320px] sm:w-[338px] md:w-[500px] h-10 border border-gray rounded placeholder:text-gray pl-4
+  }
+
+  .container-search {
+    @apply flex flex-col items-center bg-red w-[320px] sm:w-[338px] md:w-[500px] rounded-lg;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* Favorite Recipes */
+  .list-favorite {
+    @apply flex w-[318px] h-[135px] bg-white rounded-[5px] border border-gray mb-4;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* Details Card */
+  .divtitle-details {
+    @apply flex flex-col items-center mt-[-170px] mb-8 sm:mt-[-190px] md:mt-[-450px] md:mb-20;
+  }
+
+  .h1-details {
+    @apply text-center text-white text-xl md:text-3xl font-black uppercase tracking-widest;
+  }
+
+  .h2-details {
+    @apply text-black text-xl font-bold mt-9 ml-3;
+  } 
+
+  .p-details {
+    @apply leading-none text-gray m-4;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* Header Recipe */
+  .main-header-recipe {
+    @apply flex justify-between items-center w-screen h-20 md:h-32;
+  }
+
+  .p-header-recipe {
+    @apply text-yellow text-lg md:text-3xl font-bold;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* RecipeDetails */
+  .button-RecipeDetails {
+    @apply bottom-0 mt-11 mb-4 w-[18.75rem] sm:w-[21rem] h-10 bg-yellow rounded-[0.313rem] text-gray text-sm font-bold uppercase tracking-wide
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* RecipeInProgress */
+  .checkbox-container {
+    @apply flex flex-col mt-2 bg-white rounded-md border border-zinc
+  }
+  
+  .input-recipeinprogress {
+    @apply mt-[0.438rem] mr-[0.563rem] mb-[0.688rem] ml-[1.125rem] w-[1.063rem] h-[1.063rem]
+  }
+
+  .bg-transparentblack {
+    @apply absolute inset-0 z-[-1] h-[34.375rem] bg-black bg-opacity-50
+  }
+
+  .button-recipeinprogress {
+    @apply mt-11 mb-4 w-[18.75rem] sm:w-[21rem] h-10 bg-yellow rounded-[0.313rem] text-gray text-sm font-bold uppercase tracking-wide disabled:bg-gray disabled:text-white
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  /* DoneRecipes */
+  .done-recipes {
+    @apply flex w-[20rem] sm:w-[23.125rem] md:w-[56.25rem] bg-white rounded-[5px] border border-gray mb-4;
+  }
+}

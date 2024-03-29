@@ -190,7 +190,7 @@ function RecipeInProgress() {
                   onClick={ saveRecipe }
                   className="button-recipeinprogress"
                 >
-                  Finalizar Receita
+                  Finish Recipe
                 </button>
               </div>
             </div>
